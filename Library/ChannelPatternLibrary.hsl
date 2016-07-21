@@ -1,0 +1,202 @@
+// This is a part of the HSL Poinar Lab Library: Module ChannelPatternLibrary
+// Copyright (C) by McMaster Ancient DNA Centre, Katherine Eaton.
+// All rights reserved.
+//
+// Modification History
+// 2016-01-08:	Library Created
+
+//-----------------------------------------------------------------------------//
+//                              Inclusion Guards                               //
+//-----------------------------------------------------------------------------//
+
+#ifndef __ChannelPatternLibrary_hsl__
+#define __ChannelPatternLibrary_hsl__	1 
+
+
+
+//-----------------------------------------------------------------------------//
+//                            Function Declarations                            //
+//-----------------------------------------------------------------------------//
+#ifndef HSL_RUNTIME
+
+namespace ChannelPatternLibrary
+{     
+   function CreateChannelPattern(variable numSamples)                variable {return (-1);}         // zero if function succeeds, otherwise -1  
+   static function InitializeArrayAllChannelPatterns()               variable {return (-1);}         // zero if function succeeds, otherwise -1   
+   static function InitializeArraySingleChannelPatterns()            variable {return (-1);}         // zero if function succeeds, otherwise -1           
+   static function CreateChannelPatternArray(variable numSamples, 
+                                             variable numRounds)	   variable {return (-1);}         // zero if function succeeds, otherwise -1 
+   function CreateChannelPatternString(variable numRound)	         variable {return (-1);}         // string if function succeeds, otherwise -1 
+   function GetNumChannels(variable numRound)                        variable {return (-1);}         // int if function succeeds, otherwise -1
+   function GetSingleChannel(variable loopCounter)                   variable {return (-1);}         // string if function succeeds, otherwise -1 
+}
+#endif
+
+//-----------------------------------------------------------------------------//
+//                                Implementation                               //
+//-----------------------------------------------------------------------------//
+#ifdef HSL_RUNTIME
+
+namespace ChannelPatternLibrary
+{
+
+   static variable arr_channel_pattern[];
+   static variable arr_all_channel_patterns[];
+   static variable arr_single_channel_patterns[];
+   static const variable CHANNEL_CAPACITY(8);
+
+
+   // --------------------------------------------------------------------------------------
+	// Initialize the Master Array of All Channel Pattern Possibilities
+	// --------------------------------------------------------------------------------------
+   static function InitializeArrayAllChannelPatterns() variable               
+   {
+	/**
+    * Initialize the array of all channel patterns.
+	* Initializes the global array arr_all_channel_patterns. 
+    * The array contains the master list of all string channel patterns (from 1 to 8)
+    * The array arr_all_channel_patterns must be initialized within the namespace but outside of this function.
+	* @return 0 If exit successful.
+    */
+
+      arr_all_channel_patterns.SetSize(8);
+      arr_all_channel_patterns.SetAt(0,"10000000");
+      arr_all_channel_patterns.SetAt(1,"11000000");
+      arr_all_channel_patterns.SetAt(2,"11100000");
+      arr_all_channel_patterns.SetAt(3,"11110000");
+      arr_all_channel_patterns.SetAt(4,"11111000");
+      arr_all_channel_patterns.SetAt(5,"11111100");
+      arr_all_channel_patterns.SetAt(6,"11111110");
+      arr_all_channel_patterns.SetAt(7,"11111111");
+      return(0);
+   }    
+   
+   static function InitializeArraySingleChannelPatterns() variable               
+   {
+	/**
+    * Initialize the array of all channel patterns.
+	* Initializes the global array arr_all_channel_patterns. 
+    * The array contains the master list of all string channel patterns (from 1 to 8)
+    * The array arr_all_channel_patterns must be initialized within the namespace but outside of this function.
+	* @return 0 If exit successful.
+    */
+
+      arr_single_channel_patterns.SetSize(8);
+      arr_single_channel_patterns.SetAt(0,"10000000");
+      arr_single_channel_patterns.SetAt(1,"01000000");
+      arr_single_channel_patterns.SetAt(2,"00100000");
+      arr_single_channel_patterns.SetAt(3,"00010000");
+      arr_single_channel_patterns.SetAt(4,"00001000");
+      arr_single_channel_patterns.SetAt(5,"00000100");
+      arr_single_channel_patterns.SetAt(6,"00000010");
+      arr_single_channel_patterns.SetAt(7,"00000001");
+      return(0);
+   }     
+
+
+   // --------------------------------------------------------------------------------------
+	// Create Unique Channel Pattern Array
+	// --------------------------------------------------------------------------------------
+   static function CreateChannelPatternArray(variable numSamples, variable numRounds)	
+   {
+   /** Create Unique Channel Pattern Array
+   * Creates an array where indexes contain the channel pattern for the corresponding round (Round 1 = array[0])
+   * @param numSamples Number of samples to be processed.
+   * @param numRounds Number of rounds (of 8 samples) required to process all samples.
+   * @return 0 If exit successful.
+   */
+      static variable remaining_samples(numSamples);
+      static variable num_samples_round;
+      static variable counter;
+
+      for (counter = 0; counter < numRounds; counter++)
+      {
+         if (remaining_samples == 8 || remaining_samples / CHANNEL_CAPACITY > 0)
+         {
+            arr_channel_pattern[counter] = arr_all_channel_patterns[7];
+            remaining_samples = remaining_samples - CHANNEL_CAPACITY;
+         }
+
+         else
+         {
+            num_samples_round = remaining_samples % CHANNEL_CAPACITY;
+            arr_channel_pattern[counter] = arr_all_channel_patterns[num_samples_round - 1];
+         }
+      }
+
+      return(0);
+   }
+   
+   // --------------------------------------------------------------------------------------
+	// Create Unique Channel Pattern String
+	// --------------------------------------------------------------------------------------	
+   function CreateChannelPatternString(variable numRound)	
+   {
+	/** Create Unique Channel Pattern String for the Particular Round.
+	* @param numRound Round number of the current pipetting step.
+	* @return channel_pattern Channel pattern string of lenght 8 ("10000000")
+	*/
+     static variable channel_pattern;                                      // This is technically a string, but as it is an element of a variable array it must be a variable.
+     channel_pattern = arr_channel_pattern[numRound - 1];                // numRound - 1 because arrays are 0-position based (Round 1 corresponds to array position 0)
+     return(channel_pattern);                                              // Returns the channel_pattern string (despite that it is declared as a variable)
+   }
+
+   // --------------------------------------------------------------------------------------
+	// Create Channel Pattern Wrapper
+	// --------------------------------------------------------------------------------------
+   function CreateChannelPattern(variable numSamples)
+   {
+   /**
+   * Wrapper Function For Creating the Channel Patterns.
+   * @param numSamples Number of samples to be processed.
+   * @return 0 If exit successful.
+   */
+      static variable num_rounds;
+
+
+      InitializeArrayAllChannelPatterns();                              // Initialize array of channel pattern combinations
+      InitializeArraySingleChannelPatterns();                           // Initialize array of single channel patterns
+      num_rounds = (numSamples / (CHANNEL_CAPACITY + 1)) + 1;
+
+      arr_channel_pattern.SetSize(num_rounds);
+      CreateChannelPatternArray(numSamples, num_rounds);
+      return(0);
+
+   }
+
+   function GetNumChannels(variable numRound) 
+   {
+   /**
+   * Returns the number of channels that are being used in the current round.
+	* @param numRound Round number of the current pipetting step.
+   * @return non-zero if successful
+   */
+      static variable num_used_channels;
+      static string used_channel_pattern;
+      static variable channel_pattern;
+      static string string_channel_pattern;
+      
+      channel_pattern = arr_channel_pattern[numRound - 1];
+      string_channel_pattern = channel_pattern;
+      used_channel_pattern = string_channel_pattern.SpanExcluding("0");
+      num_used_channels = used_channel_pattern.GetLength();
+
+      return(num_used_channels);
+   } 
+
+   function GetSingleChannel(variable loopCounter) 
+   {
+   /**
+   * Returns the channel pattern for a single channel in use.
+	* @param loopCounter A loop counter (in the range 1-8) corresponding to channel in use
+   * @return single_channel_pattern Channel pattern of individual channel.
+   */
+   static variable single_channel_pattern;
+   single_channel_pattern = arr_single_channel_patterns[loopCounter - 1];
+   return(single_channel_pattern);
+   }
+}
+
+#endif
+#endif
+// $$author=Poinar$$valid=0$$time=2016-01-09 15:02$$checksum=cf9c1e86$$length=085$$
