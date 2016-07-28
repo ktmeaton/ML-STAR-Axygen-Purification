@@ -359,11 +359,9 @@ num_bead_iso_tubes = num_bead_iso_tubes_base0 + 1;
 // {{ 79 1 0 "bbb3ebda_fd40_4910_ad40cc8e2655caad" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 80 1 0 "07f53ea0_42e1_49e6_b411087a5e69d653" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 STEPTRACKER::START_Activity(Translate("Bead-Isopropanol Addition"), Translate(""), 16, 2);
 // }} ""
-/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 81 1 0 "1c2f2333_ad1a_479c_a01bb3567809abf1" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
 for(counter_bead_transfer = 0; counter_bead_transfer < num_pipette_rounds;)
@@ -417,11 +415,9 @@ single_channel_pattern = ChannelPatternLibrary::GetSingleChannel(counter_bead_is
 }
 }
 // }} ""
-/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{{ 92 1 0 "b906ca8d_4203_41a4_808a56d6f6b1ec2a" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 STEPTRACKER::TERMINATE_ALL();
 // }} ""
-/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 93 1 0 "bbb3ebda_fd40_4910_ad40cc8e2655caad" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
@@ -1164,4 +1160,4 @@ STEPTRACKER::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=McMaster$$valid=0$$time=2016-07-28 11:28$$checksum=10032663$$length=087$$
+// $$author=McMaster$$valid=0$$time=2016-07-28 11:51$$checksum=67b0122a$$length=087$$
