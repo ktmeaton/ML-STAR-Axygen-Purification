@@ -318,6 +318,7 @@ ChannelPatternLibrary::CreateChannelPattern(num_samples);
 // {{ 67 1 0 "c00d75f2_5d52_4fce_bcdccd79ff3060df" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
+/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{ 68 1 0 "b1f97ab1_4c1b_4585_9b025c20e029457d" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
@@ -348,6 +349,7 @@ num_bead_iso_tubes = num_bead_iso_tubes_base0 + 1;
 // {{ 76 1 0 "b1f97ab1_4c1b_4585_9b025c20e029457d" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
+/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 77 1 0 "304364ad_735a_4f19_a130a3ae44bb395f" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
@@ -949,10 +951,10 @@ single_channel_pattern = ChannelPatternLibrary::GetSingleChannel(counter_elution
 }
 }
 // }} ""
-// {{ 227 1 0 "2cde284b_76e6_4b8d_ac2cb28b74914700" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 227 1 0 "cdb52454_e177_4222_8a261c0fea39654b" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("2cde284b_76e6_4b8d_ac2cb28b74914700"); // Dispense
+	arrRetValues = ML_STAR._541143F8_7FA2_11D3_AD85_0004ACB1DCB2("cdb52454_e177_4222_8a261c0fea39654b"); // Dispense
 }
 // }} ""
 // {{{ 228 1 0 "4158ccb0_a4cc_4ad5_b03a7b08d7a552b2" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -976,20 +978,20 @@ ML_STAR.Plate_Raw_Samples.SetCurrentPosition(mix_pos);
 // {{{ 234 1 0 "79587742_a104_4869_b31cf8b76469ad0f" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 STEPTRACKER::START_Activity(Translate("Mixing Beads"), Translate(""), 15, 2);
 // }} ""
-// {{ 235 1 0 "45d4df92_bfd3_4af9_b1405751b7f44b5e" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 235 1 0 "1805c3cb_6072_4e21_82c16f26bcd834f4" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("45d4df92_bfd3_4af9_b1405751b7f44b5e"); // Aspirate
+	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("1805c3cb_6072_4e21_82c16f26bcd834f4"); // Aspirate
 }
 // }} ""
-// {{{ 236 1 0 "755be87a_f067_40c6_857bea1d5f39db50" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-STEPTRACKER::TERMINATE_ALL();
-// }} ""
-// {{ 237 1 0 "32139a6e_00ce_4ff6_8466b62aa8d2e673" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 236 1 0 "32139a6e_00ce_4ff6_8466b62aa8d2e673" "ML_STAR:{541143FC-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
 	arrRetValues = ML_STAR._541143FC_7FA2_11D3_AD85_0004ACB1DCB2("32139a6e_00ce_4ff6_8466b62aa8d2e673"); // TipEject
 }
+// }} ""
+// {{{ 237 1 0 "4dd4ee2e_1351_4af1_88ce5a1e1049e47d" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+STEPTRACKER::TERMINATE_ALL();
 // }} ""
 // {{ 238 1 0 "4b8b8b81_511a_409b_9caa2ab9fb303724" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 }
@@ -1162,4 +1164,4 @@ STEPTRACKER::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=McMaster$$valid=0$$time=2016-07-26 17:16$$checksum=d05e9c2c$$length=087$$
+// $$author=McMaster$$valid=0$$time=2016-07-28 11:28$$checksum=10032663$$length=087$$
