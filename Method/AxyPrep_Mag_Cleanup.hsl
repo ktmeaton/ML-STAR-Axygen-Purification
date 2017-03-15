@@ -68,9 +68,6 @@ variable VOL_EPPENDORF_MAX;
 dialog customDialog257CAC8F41764179BACE008C6EC29689;
 variable vol_bead_isopropanol;
 dialog customDialogA937FB52A28248179B4E9A45EE846C47;
-dialog customDialog23A6DB9E4571438a8EF316976C157D33;
-dialog customDialog24F973DD1A0D4541908097531BC05CD1;
-dialog customDialog06EA080CDFB2418e9154F7ABE892C011;
 dialog customDialog71542842155B4b8bAA51E8F83E1FB838;
 dialog customDialog6FC6A3D9B9E747deAC9438FDA221C186;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
@@ -782,10 +779,10 @@ num_used_channels = ChannelPatternLibrary::GetNumChannels(counter_ethanol_remove
 	arrRetValues = ML_STAR._541143FA_7FA2_11D3_AD85_0004ACB1DCB2("b9974349_1186_45aa_b1097e9d7cbc84ea"); // TipPickUp
 }
 // }} ""
-// {{ 186 1 0 "c6296e72_fd05_415e_9469bbc0d834f4bb" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 186 1 0 "ffafe217_edaa_498c_b78ebae58f81e4ef" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("c6296e72_fd05_415e_9469bbc0d834f4bb"); // Aspirate
+	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("ffafe217_edaa_498c_b78ebae58f81e4ef"); // Aspirate
 }
 // }} ""
 // {{ 187 1 0 "680794b0_7ef2_45c4_adfdfb4c57831438" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
@@ -889,10 +886,10 @@ num_used_channels = ChannelPatternLibrary::GetNumChannels(counter_ethanol_remova
 	arrRetValues = ML_STAR._541143FA_7FA2_11D3_AD85_0004ACB1DCB2("114f6c81_1dd5_43f3_b22e7ba7361195e3"); // TipPickUp
 }
 // }} ""
-// {{ 213 1 0 "a8b941e3_ff73_4d13_895f163a77d545d4" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 213 1 0 "09764350_947d_4e80_8dd44984fdf45cfd" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("a8b941e3_ff73_4d13_895f163a77d545d4"); // Aspirate
+	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("09764350_947d_4e80_8dd44984fdf45cfd"); // Aspirate
 }
 // }} ""
 // {{ 214 1 0 "2488553f_4b1c_4da9_86dd55439b0ed94a" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
@@ -1145,10 +1142,10 @@ num_used_channels = ChannelPatternLibrary::GetNumChannels(counter_final_elute);
 	arrRetValues = ML_STAR._541143FA_7FA2_11D3_AD85_0004ACB1DCB2("cd993d6d_8631_4d66_87950631548e4250"); // TipPickUp
 }
 // }} ""
-// {{ 281 1 0 "4b014ef8_a113_4de7_ac730f400e05e5da" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
+// {{ 281 1 0 "a8a79361_f34c_42a8_a3005d850be59aef" "ML_STAR:{541143F5-7FA2-11D3-AD85-0004ACB1DCB2}"
 {
 	variable arrRetValues[];
-	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("4b014ef8_a113_4de7_ac730f400e05e5da"); // Aspirate
+	arrRetValues = ML_STAR._541143F5_7FA2_11D3_AD85_0004ACB1DCB2("a8a79361_f34c_42a8_a3005d850be59aef"); // Aspirate
 }
 // }} ""
 // {{ 282 1 0 "aa560e2c_fd27_4140_95b11fd23f2463cf" "ML_STAR:{541143F8-7FA2-11D3-AD85-0004ACB1DCB2}"
@@ -1176,7 +1173,7 @@ STEPTRACKER::TERMINATE_ALL();
 // {{ 287 1 0 "f6199ad5_c64b_4ce1_a53a919b4405a598" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 288 1 0 "86f26238_a8cb_48da_9e22af5c2e2d6242" "{586C3429-F931-405f-9938-928E22C90BFA}"
+// {{ 288 1 0 "153d03e0_139e_458f_8b4afcac282acc66" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
 // {{ 289 1 0 "05f679fe_fb15_4910_a6e82b2b3984322d" "{586C3429-F931-405f-9938-928E22C90BFA}"
@@ -1201,7 +1198,7 @@ TipCount::Write2(ML_STAR.tip_50, Translate("tc_50"), ML_STAR);
 // {{ 295 1 0 "05f679fe_fb15_4910_a6e82b2b3984322d" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 296 1 0 "86f26238_a8cb_48da_9e22af5c2e2d6242" "{586C3429-F931-405f-9938-928E22C90BFA}"
+// {{ 296 1 0 "153d03e0_139e_458f_8b4afcac282acc66" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
 // {{{ 297 1 0 "513eedff_d6ec_4fba_a71866ed8d9ce1bd" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
@@ -1214,4 +1211,4 @@ STEPTRACKER::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=McMaster$$valid=0$$time=2017-03-09 16:54$$checksum=c1e944b6$$length=087$$
+// $$author=Poinar$$valid=0$$time=2017-03-15 11:48$$checksum=2e87abf9$$length=085$$
