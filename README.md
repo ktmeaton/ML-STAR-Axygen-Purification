@@ -1,6 +1,6 @@
-# Project Name
+# ML STAR Axygen Purification
 
-TODO: Write a project description
+An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 
 ## Installation
 
