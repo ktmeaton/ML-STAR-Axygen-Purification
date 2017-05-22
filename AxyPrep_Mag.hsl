@@ -1,6 +1,10 @@
 #include "AxyPrep_Mag.res"
-global device ML_STAR ("AxyPrep_Mag.lay", "ML_STAR", hslTrue);
+ namespace _Method { #include "HSLML_STARLib.hsl" } 
+ namespace _Method { #include "Visual_NTR_library\\Visual_NTR_library.hs_" } 
+ namespace _Method { #include "HSLTipCountingLib.hsl" } 
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
+global device ML_STAR ("AxyPrep_Mag.lay", "ML_STAR", hslTrue);
+variable sim;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
  namespace _Method { #include "HSLMETEDLib.hs_" } 
@@ -29,11 +33,83 @@ PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
 PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
 PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
 PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+VISUAL_NTR_LIBRARY::_InitLibrary();
 ::RegisterAbortHandler( "OnAbort");
 // }} ""
+// {{ 1 1 0 "568c2135_ee06_408f_95f8d331a3236b77" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 2 1 0 "e10001be_d1cb_4e53_ab82e2c42654d66d" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 3 1 0 "4bfb5d48_e499_48e3_9bad9b3520b9608b" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 4 1 0 "9d1cebd7_80cc_4478_a6ce9f8ab05c86dc" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 5 1 0 "afbc5588_99f1_4801_80d9a6056537fe17" "ML_STAR:{1C0C0CB0-7C87-11D3-AD83-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._1C0C0CB0_7C87_11D3_AD83_0004ACB1DCB2("afbc5588_99f1_4801_80d9a6056537fe17"); // Initialize
+}
+// }} ""
+// {{{ 6 1 0 "75407f43_fb19_4075_a4080f4fe4254910" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+sim = HSLML_STAR::IsSimulatorMode(ML_STAR);
+// }} ""
+// {{ 7 1 0 "b1403643_113d_4b89_90951c80ef54789d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (sim != 1)
+{
+// }} ""
+// {{{ 8 1 0 "e7886c14_ab06_49de_92524f10cdf530d1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+VISUAL_NTR_LIBRARY::Channels_TipCounter_Edit(ML_STAR, ML_STAR.tip_50, Translate("tc50"), Translate("50 uL Tips Edit"), 1, 999);
+// }} ""
+// {{{ 9 1 0 "f9b7ce29_ce6a_4364_8214a10ee0e29916" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TipCount::Edit2(ML_STAR.tip_300, Translate("tc300"), ML_STAR, 999);
+// }} ""
+// {{{ 10 1 0 "bfd75350_150e_41d6_82b34ad7efe79df1" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TipCount::Edit2(ML_STAR.tip_1000, Translate("tc1000"), ML_STAR, 999);
+// }} ""
+// {{ 11 1 0 "b1403643_113d_4b89_90951c80ef54789d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{ 12 1 0 "4bfb5d48_e499_48e3_9bad9b3520b9608b" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 13 1 0 "89ae0238_dee0_4987_9587821ec835f3e9" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 14 1 0 "1edc34ff_01f4_49c2_8441618d51cb01bb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 15 1 0 "89ae0238_dee0_4987_9587821ec835f3e9" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 16 1 0 "4b63a7ce_48b9_4a45_b0236842e339f739" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 17 1 0 "198de66a_5241_4e73_846daabdf0ff52cb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 18 1 0 "4b63a7ce_48b9_4a45_b0236842e339f739" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 19 1 0 "e10001be_d1cb_4e53_ab82e2c42654d66d" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 20 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 21 1 0 "f062c27c_2209_4407_88c0693ade8c20a3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 22 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
 // {{ 2 "AutoExitBlock" ""
+VISUAL_NTR_LIBRARY::_ExitLibrary();
 // }} ""
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=Poinar$$valid=0$$time=2017-05-22 13:48$$checksum=b74f607b$$length=085$$
+// $$author=Poinar$$valid=0$$time=2017-05-22 15:08$$checksum=9d053d58$$length=085$$
