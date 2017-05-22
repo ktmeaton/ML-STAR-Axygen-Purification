@@ -5,6 +5,10 @@
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 global device ML_STAR ("AxyPrep_Mag.lay", "ML_STAR", hslTrue);
 variable sim;
+dialog customDialog0E6E5CE46BE844f1B5380F22D7DE5CE5;
+dialog customDialog3CE0A873F7CF4488AE2DCA41044266F2;
+variable vol_beadiso;
+variable num_samples;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
  namespace _Method { #include "HSLMETEDLib.hs_" } 
@@ -82,28 +86,40 @@ TipCount::Edit2(ML_STAR.tip_1000, Translate("tc1000"), ML_STAR, 999);
 // {{ 14 1 0 "1edc34ff_01f4_49c2_8441618d51cb01bb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 15 1 0 "89ae0238_dee0_4987_9587821ec835f3e9" "{586C3429-F931-405f-9938-928E22C90BFA}"
-
+// {{ 15 1 0 "64193681_5dd2_41c8_b578bb2bee723b2c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+num_samples = 0;
 // }} ""
-// {{ 16 1 0 "4b63a7ce_48b9_4a45_b0236842e339f739" "{586C3429-F931-405f-9938-928E22C90BFA}"
-
+// {{ 16 1 0 "b5de4e87_b8a5_45ba_b35097496d3d5599" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+vol_beadiso = 0;
 // }} ""
-// {{ 17 1 0 "198de66a_5241_4e73_846daabdf0ff52cb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 17 1 0 "89ae0238_dee0_4987_9587821ec835f3e9" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
 // {{ 18 1 0 "4b63a7ce_48b9_4a45_b0236842e339f739" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 19 1 0 "e10001be_d1cb_4e53_ab82e2c42654d66d" "{586C3429-F931-405f-9938-928E22C90BFA}"
+// {{ 19 1 0 "198de66a_5241_4e73_846daabdf0ff52cb" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 20 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
+// {{ 20 1 0 "96a3e494_15d4_4fb8_872456822684a141" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog3CE0A873F7CF4488AE2DCA41044266F2.InitCustomDialog( "96a3e494_15d4_4fb8_872456822684a141" );
+customDialog3CE0A873F7CF4488AE2DCA41044266F2.ShowCustomDialog();
+num_samples = customDialog3CE0A873F7CF4488AE2DCA41044266F2.GetCustomDialogProperty( "button_numsamples.Value" );
+vol_beadiso = customDialog3CE0A873F7CF4488AE2DCA41044266F2.GetCustomDialogProperty( "button_volbeadiso.Value" );
+// }} ""
+// {{ 21 1 0 "4b63a7ce_48b9_4a45_b0236842e339f739" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 21 1 0 "f062c27c_2209_4407_88c0693ade8c20a3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 22 1 0 "e10001be_d1cb_4e53_ab82e2c42654d66d" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-// {{ 22 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
+// {{ 23 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
+
+// }} ""
+// {{ 24 1 0 "f062c27c_2209_4407_88c0693ade8c20a3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 25 1 0 "d2c4766b_3d33_477f_bb5949c0ad9a7534" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
 // {{ 2 "AutoExitBlock" ""
@@ -112,4 +128,4 @@ VISUAL_NTR_LIBRARY::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=Poinar$$valid=0$$time=2017-05-22 15:08$$checksum=9d053d58$$length=085$$
+// $$author=Poinar$$valid=0$$time=2017-05-22 17:55$$checksum=6179f6e5$$length=085$$
