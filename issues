@@ -1,0 +1,9 @@
+Custom labware creation:
+    - 96 well plate on top of magnetic rack
+    - pipetting and plate transport
+
+Liquid detection:
+
+Liquid transfer (stock tube to plate)
+    - Aspirate from a single reagent tube (50 mL falcon), dispense to plate wells equivalent to number of samples.
+    - I achieve this by writing loops, and manipulating the channel pattern string
