@@ -2,9 +2,16 @@
 
 An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 
+## Version
+
+Last Stable Release - master  
+Development - v0.1.1  
+
 ## Installation
 
-TODO: Describe the installation process
+Release:  
+git clone https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
+cd ML-STAR-Axygen-Purification
 
 ## Usage
 
@@ -24,8 +31,11 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
+author: Katherine Eaton (ktmeaton@gmail.com)
 
 ## License
 
 TODO: Write license
+
+## Helpful Commands
+Merging a development branch:  
