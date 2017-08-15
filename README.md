@@ -10,7 +10,7 @@ Development - v0.1.1
 ## Installation
 
 Release:  
-git clone https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
+git clone https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git  
 cd ML-STAR-Axygen-Purification
 
 ## Usage
@@ -38,4 +38,8 @@ author: Katherine Eaton (ktmeaton@gmail.com)
 TODO: Write license
 
 ## Helpful Commands
-Merging a development branch:  
+Merging a development branch into master:  
+  (on branch development) git merge master  
+  (resolve any mergen conflicts if there are any)  
+  git checkout master  
+  git merge --no-ff development (there won't be any conflicts now)  
