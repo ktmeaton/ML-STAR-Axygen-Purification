@@ -18,6 +18,6 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
 
-[Unreleased]: https://github.com/ktmeaton/NGSeXplore/compare/v0.1.2...HEAD
-[v0.1.2]: https://github.com/ktmeaton/NGSeXplore/compare/v0.1.1...v0.1.2
-[v0.1.1]: https://github.com/ktmeaton/NGSeXplore/compare/v0.1.1...v0.1.1
+[Unreleased]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.2...HEAD
+[v0.1.2]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.1...v0.1.2
+[v0.1.1]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.1...v0.1.1
