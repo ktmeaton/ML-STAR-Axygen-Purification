@@ -7,11 +7,11 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 ## [Unreleased]
 ### Changed
 
-## [0.1.1] - 2017-08-15
+## [0.1.1] - 2017-09-21
 ### Added
 - README.md
 - CHANGELOG.md
-- Full method, in development
+- Full method, draft
 
 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
 
