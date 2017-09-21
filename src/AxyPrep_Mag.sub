@@ -8,20 +8,20 @@ function OnAbort(  ) void {
 private sequence default;
 // {{ 5 "OnAbort" "InitLocals"
 // }} ""
-// {{ 130 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 353 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (sim != 1)
 {
 // }} ""
-// {{{ 131 1 0 "f1a8fd8c_8f06_412a_95cdf308dc246b6e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 354 1 0 "f1a8fd8c_8f06_412a_95cdf308dc246b6e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TipCount::Write2(ML_STAR.tip_50, Translate("tc50"), ML_STAR);
 // }} ""
-// {{{ 132 1 0 "b6ddfaf0_f7c3_47f0_8422cfad6815d411" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+// {{{ 355 1 0 "b6ddfaf0_f7c3_47f0_8422cfad6815d411" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TipCount::Write2(ML_STAR.tip_300, Translate("tc300"), ML_STAR);
 // }} ""
-// {{{ 133 1 0 "7b35891d_1239_4c06_866dc1143c61cec0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 356 1 0 "7b35891d_1239_4c06_866dc1143c61cec0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, ML_STAR.tip_50, Translate("tc50"), default, ML_STAR.COREGripTool_OnWaste_1000ul_0001, 1, 1, 0, ML_STAR.tip_50, 0, 8, 0, 0, Translate("Please Reload 50uL Tips!"), 999);
 // }} ""
-// {{ 134 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 357 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 5 "OnAbort" "End"
@@ -32,18 +32,18 @@ private function CheckRetValue( variable retValue ) void {
 // }} ""
 // {{ 5 "CheckRetValue" "InitLocals"
 // }} ""
-// {{ 126 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 349 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 if (retValue == ABORT)
 {
 // }} ""
-// {{ 127 1 0 "81691c4e_51d3_4785_9683f0fae28755e5" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
+// {{ 350 1 0 "81691c4e_51d3_4785_9683f0fae28755e5" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
 abort;
 // }} ""
-// {{ 128 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 351 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
 // {{{ 5 "CheckRetValue" "End"
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=Poinar$$valid=0$$time=2017-06-01 14:12$$checksum=f4486c38$$length=085$$
+// $$author=Poinar$$valid=0$$time=2017-09-21 16:16$$checksum=0be4b1e5$$length=085$$
