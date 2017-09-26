@@ -8,7 +8,7 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [v0.1.2] - 2017-09-21
 ### Added
-- Testing
+- Functional method!
 
 ## [v0.1.1] - 2017-09-21
 ### Added
