@@ -7,8 +7,17 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 ## [Unreleased]
 
 ## [v0.1.3] - 2017-10-16
+
+## Added
+- Proper sequence control for pipetting loops
+- Many liquid editor fixes for ADC
+
 ### Changed
-- Volatile liquid troubleshooting?
+- Z coordinates for labware
+- "Not executed error" handling
+- LLD detection settings
+- Submerge depth
+- TADM tolerance bands volume specific
 
 ## [v0.1.2] - 2017-09-21
 ### Added
