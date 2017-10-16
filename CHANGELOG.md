@@ -6,6 +6,10 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [v0.1.3] - 2017-10-16
+### Changed
+- Volatile liquid troubleshooting?
+
 ## [v0.1.2] - 2017-09-21
 ### Added
 - Functional method!
@@ -18,6 +22,7 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
 
-[Unreleased]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.3...HEAD
+[v0.1.3]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/ktmeaton/ML-STAR-Axygen-Purification/compare/v0.1.1...v0.1.1
