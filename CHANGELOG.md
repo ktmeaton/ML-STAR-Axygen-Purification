@@ -6,6 +6,11 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [v0.1.4] - 2018-0126
+
+## Added
+- Notes file for informal changes
+
 ## [v0.1.3] - 2017-10-16
 
 ## Added
@@ -13,11 +18,16 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 - Many liquid editor fixes for ADC
 
 ### Changed
-- Z coordinates for labware
-- "Not executed error" handling
+- Changed Z coordinates for labware: touch off, reach bottomm, pull back to set height
+- 50 uL tips bend, not the best option
+- "Not executed error" handling (is the correct option)
+- Avoid "From Labware defition"
+- Insufficient liquid error, "use available" is a better choice
+- Mixing: submerge depth is additional on top of earlier set value
 - LLD detection settings
 - Submerge depth
 - TADM tolerance bands volume specific
+- TADM curves: steep decline = bottom out (too close to bottom)
 
 ## [v0.1.2] - 2017-09-21
 ### Added

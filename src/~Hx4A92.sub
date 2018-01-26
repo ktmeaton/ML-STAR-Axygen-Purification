@@ -1,0 +1,49 @@
+// {{{ 2 "SubmethodForwardDeclaration" ""
+private function CheckRetValue( variable retValue ) void ;
+function OnAbort(  ) void ;
+// }} ""
+// {{{ 5 "OnAbort" "Begin"
+function OnAbort(  ) void {
+// }} ""
+private sequence default;
+// {{ 5 "OnAbort" "InitLocals"
+// }} ""
+// {{ 392 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (sim != 1)
+{
+// }} ""
+// {{{ 393 1 0 "f1a8fd8c_8f06_412a_95cdf308dc246b6e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TipCount::Write2(ML_STAR.tip_50, Translate("tc50"), ML_STAR);
+// }} ""
+// {{{ 394 1 0 "b6ddfaf0_f7c3_47f0_8422cfad6815d411" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TipCount::Write2(ML_STAR.tip_300, Translate("tc300"), ML_STAR);
+// }} ""
+// {{{ 395 1 0 "7b35891d_1239_4c06_866dc1143c61cec0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, ML_STAR.tip_50, Translate("tc50"), default, ML_STAR.COREGripTool_OnWaste_1000ul_0001, 1, 1, 0, ML_STAR.tip_50, 0, 8, 0, 0, Translate("Please Reload 50uL Tips!"), 999);
+// }} ""
+// {{ 396 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 5 "OnAbort" "End"
+}
+// }} ""
+// {{{ 5 "CheckRetValue" "Begin"
+private function CheckRetValue( variable retValue ) void {
+// }} ""
+// {{ 5 "CheckRetValue" "InitLocals"
+// }} ""
+// {{ 388 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+if (retValue == ABORT)
+{
+// }} ""
+// {{ 389 1 0 "81691c4e_51d3_4785_9683f0fae28755e5" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
+abort;
+// }} ""
+// {{ 390 1 0 "0641c6bc_4ce3_4573_a122d1417a9d2485" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+}
+// }} ""
+// {{{ 5 "CheckRetValue" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// $$author=McMaster$$valid=0$$time=2017-10-16 16:01$$checksum=7ad8ba23$$length=087$$
