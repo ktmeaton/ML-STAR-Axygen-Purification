@@ -6,6 +6,11 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## To-Do
+- Fix loop-counter steps
+- Ehtanol removal step is a tad drippy
+- Remember: EB mixing is a separate step because of liquid-following mode
+
 ## [v0.1.4] - 2018-0126
 
 ## Added
