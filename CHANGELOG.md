@@ -7,14 +7,16 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 ## [Unreleased]
 
 ## To-Do
-- Fix loop-counter steps
 - Ehtanol removal step is a tad drippy
 - Remember: EB mixing is a separate step because of liquid-following mode
 
-## [v0.1.4] - 2018-0126
+## [v0.1.4] - 2018-0509
 
 ## Added
 - Notes file for informal changes
+
+## Changed
+- How loop counters work (no more ChannelPattern library)
 
 ## [v0.1.3] - 2017-10-16
 
