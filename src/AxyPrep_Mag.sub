@@ -18,8 +18,8 @@ TipCount::Write2(ML_STAR.tip_50, Translate("tc50"), ML_STAR);
 // {{{ 345 1 0 "b6ddfaf0_f7c3_47f0_8422cfad6815d411" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 TipCount::Write2(ML_STAR.tip_300, Translate("tc300"), ML_STAR);
 // }} ""
-// {{{ 346 1 0 "7b35891d_1239_4c06_866dc1143c61cec0" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, ML_STAR.tip_50, Translate("tc50"), default, ML_STAR.COREGripTool_OnWaste_1000ul_0001, 1, 1, 0, ML_STAR.tip_50, 0, 8, 0, 0, Translate("Please Reload 50uL Tips!"), 999);
+// {{{ 346 1 0 "57e1c227_940c_432a_ad8e8de3f1e403ce" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+VISUAL_NTR_LIBRARY::Channels_TipCounter_Write(ML_STAR, ML_STAR.tip_50, Translate("tc50"), ML_STAR.Waste, ML_STAR.COREGripTool_OnWaste_1000ul_0001, 1, 1, 0, ML_STAR.tip_50, 0, 8, 0, 0, Translate("Please Reload 50uL Tips!"), 999);
 // }} ""
 // {{ 347 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
@@ -46,4 +46,4 @@ abort;
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=McMaster$$valid=0$$time=2018-05-09 10:51$$checksum=e31d4337$$length=087$$
+// $$author=McMaster$$valid=0$$time=2018-05-30 13:14$$checksum=2b3ba4a1$$length=087$$
