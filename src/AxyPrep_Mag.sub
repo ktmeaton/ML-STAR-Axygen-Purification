@@ -5,7 +5,6 @@ function OnAbort(  ) void ;
 // {{{ 5 "OnAbort" "Begin"
 function OnAbort(  ) void {
 // }} ""
-private sequence default;
 // {{ 5 "OnAbort" "InitLocals"
 // }} ""
 // {{ 343 1 0 "e4f78dfe_b8c2_434a_aeb822fdb0327699" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -46,4 +45,4 @@ abort;
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=McMaster$$valid=0$$time=2018-05-30 13:14$$checksum=2b3ba4a1$$length=087$$
+// $$author=McMaster$$valid=0$$time=2018-11-16 17:07$$checksum=1b721947$$length=087$$

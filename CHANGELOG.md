@@ -17,6 +17,9 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## Changed
 - How loop counters work (no more ChannelPattern library)
+- Grip Height from 4 to 10. I don't know why this parameter would have changed.
+- Disabled AntiDroplet control for the recovering the final supernantant. It was giving firmware errors that were not recoverable.
+- Tube for the bead-isopropanol mix is now programmed for a 50 mL falcon.
 
 ## [v0.1.3] - 2017-10-16
 
