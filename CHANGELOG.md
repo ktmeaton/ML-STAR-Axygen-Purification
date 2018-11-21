@@ -7,13 +7,13 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 ## [Unreleased]
 
 ## To-Do
-- Ehtanol removal step is a tad drippy
 - Remember: EB mixing is a separate step because of liquid-following mode
 
 ## [v0.1.4] - 2018-0509
 
 ## Added
 - Notes file for informal changes
+- New submethod CheckTipSeq to check if the tips are about to run out 
 
 ## Changed
 - How loop counters work (no more ChannelPattern library)
