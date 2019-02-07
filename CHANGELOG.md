@@ -9,7 +9,7 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 ## To-Do
 - Remember: EB mixing is a separate step because of liquid-following mode
 
-## [v0.1.4] - 2018-0509
+## [v0.1.4] - 2018-11-28
 
 ## Added
 - Notes file for informal changes
@@ -21,6 +21,7 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 - Disabled AntiDroplet control for the recovering the final supernantant. It was giving firmware errors that were not recoverable.
 - Tube for the bead-isopropanol mix is now programmed for a 50 mL falcon.
 - Removed AntiDroplet control for all steps not involving solvents
+- 2019-0207: Improved Tip Reloading Submethod, hard-coded 50uL NTR rack number though
 
 ## [v0.1.3] - 2017-10-16
 
