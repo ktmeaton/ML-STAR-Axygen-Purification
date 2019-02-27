@@ -52,20 +52,15 @@ private variable Tip50EndPos;
 private variable Tip300CurrentPos;
 private variable Tip300EndPos;
 private variable Tip50CurrentPos;
-private variable Tip300NewPos;
 private dialog customDialog3EDD570D59E14ca38F13C15186BC8FAB;
 private dialog customDialog9A42980607914e05BCA9B3770EBF9EAA;
 private variable Tip1000CurrentPos;
-private variable Tip1000NewPos;
 private variable Tip1000EndPos;
 private dialog customDialog1444CA3B69B046deA93971C9161CB826;
-private variable Tip50NewPos;
-private dialog customDialogFD82A32AB93B4068B54017F13C4988ED;
 private variable num_sample_seq_remaining;
 private variable pos_seq_sample_end;
 private variable pos_seq_sample_current;
 private variable num_channels;
-private dialog customDialog2C6F2039604E465d8D3375E7501002C3;
 private variable Tip300RemainPos;
 private variable Tip1000RemainPos;
 private variable Tip50RemainPos;
@@ -90,7 +85,7 @@ pos_seq_sample_end = seq_sample.GetCount();
 // {{ 360 1 0 "07675da2_5481_428e_8e59acabdf957c0c" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
 num_sample_seq_remaining = pos_seq_sample_end - pos_seq_sample_current;
 // }} ""
-// {{ 361 1 0 "86f2a32d_607c_4f78_b7da18a134e942ed" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 361 1 0 "a2b235fb_701d_45fc_a3789e6b5b07cb74" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 362 1 0 "b414cee6_38f8_4d86_a8a2bd66f1718a48" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
@@ -328,4 +323,4 @@ TipCount::Edit2(ML_STAR.tip_1000, Translate("tc1000"), ML_STAR, 999);
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=McMaster$$valid=0$$time=2019-02-07 11:01$$checksum=d49736a3$$length=087$$
+// $$author=McMaster$$valid=0$$time=2019-02-26 08:28$$checksum=6d5347f5$$length=087$$

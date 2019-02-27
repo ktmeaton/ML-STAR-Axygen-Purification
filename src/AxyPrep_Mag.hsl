@@ -91,7 +91,7 @@ VISUAL_NTR_LIBRARY::_InitLibrary();
 STEPTRACKER::_InitLibrary();
 ::RegisterAbortHandler( "OnAbort");
 // }} ""
-// {{ 1 1 0 "1abd5eb5_be2f_4132_8226c4daaf99eac8" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 1 1 0 "532a56a7_b4f2_4c7f_bc0379b8c40d2da6" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 2 1 0 "bad419be_69c2_4a5e_8c26b05c90683afb" "{586C3429-F931-405f-9938-928E22C90BFA}"
@@ -312,7 +312,6 @@ ML_STAR.plate_final.SetCount(num_samples);
 // {{ 69 1 0 "bad419be_69c2_4a5e_8c26b05c90683afb" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-/* {{ 1 "" "0" */ if(0){  /* }} "" */
 // {{ 70 1 0 "c4291a42_b2e1_4f61_b4069a7544843c39" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
@@ -1491,7 +1490,6 @@ TipCount::Write2(ML_STAR.tip_1000, Translate("tc1000"), ML_STAR);
 // {{ 349 1 0 "38d7227b_1c8e_4512_abd0b1769dcaf680" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
 // }} ""
-/* {{ 1 "" "1" */ } /* }} "" */
 // {{ 2 "AutoExitBlock" ""
 VISUAL_NTR_LIBRARY::_ExitLibrary();
 STEPTRACKER::_ExitLibrary();
@@ -1499,4 +1497,4 @@ STEPTRACKER::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=McMaster$$valid=0$$time=2019-02-07 11:01$$checksum=569c03b1$$length=087$$
+// $$author=McMaster$$valid=0$$time=2019-02-26 08:28$$checksum=5811e618$$length=087$$
