@@ -6,10 +6,11 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
-## To-Do
-- Remember: EB mixing is a separate step because of liquid-following mode
+## [v0.1.5] - 2019-04-26
+- Fixed tip reloading as best as possible
+- Still don't know how to prepare for when Tip50 runs out exactly at each level
 
-## [v0.1.4] - 2018-11-28
+## [v0.1.4] - 2019-04-12
 
 ## Added
 - Notes file for informal changes
