@@ -432,4 +432,4 @@ TipCount::Edit2(ML_STAR.tip_1000, Translate("tc1000"), ML_STAR, 999);
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=McMaster$$valid=0$$time=2019-04-26 11:31$$checksum=cb74ead0$$length=087$$
+// $$author=McMaster$$valid=0$$time=2019-04-26 11:41$$checksum=b607ec88$$length=087$$
