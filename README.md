@@ -2,7 +2,7 @@
 
 An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 
-## Version 0.1.5
+## Version 0.2.0
 
 Last Stable Release - v0.1.5 (master)  
 Development - v0.2.0 (dev)  
@@ -43,7 +43,7 @@ author: Katherine Eaton (ktmeaton@gmail.com)
 TODO: Write license
 
 ## Helpful Commands
-Merging a development branch into master:  
+**Merging a development branch into master:**  
   (on branch development) git merge master  
   (resolve any mergen conflicts if there are any)  
   git checkout master  
