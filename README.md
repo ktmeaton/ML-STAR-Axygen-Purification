@@ -4,8 +4,8 @@ An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 
 ## Version
 
-Last Stable Release - v0.1.3 (master)  
-Development - v0.1.5 (v0.1.5)  
+Last Stable Release - v0.1.5 (master)  
+Development - v0.2.0 (dev)  
 
 ## Installation
 
@@ -14,13 +14,12 @@ git clone https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
 cd ML-STAR-Axygen-Purification  
 
 Development:  
-git clone -b v0.1.5 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git  
+git clone -b dev https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git  
 cd ML-STAR-Axygen-Purification   
 
 ## Usage
 
 TODO: Write usage instructions
-Merge v0.1.5 into master, hasn't been updated since v0.1.3 (2017)  
 
 
 ## Contributing
