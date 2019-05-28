@@ -14,7 +14,7 @@ git clone https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git
 cd ML-STAR-Axygen-Purification  
 
 Development:  
-git clone -b v0.1.4 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git  
+git clone -b v0.1.5 https://github.com/ktmeaton/ML-STAR-Axygen-Purification.git  
 cd ML-STAR-Axygen-Purification   
 
 ## Usage
