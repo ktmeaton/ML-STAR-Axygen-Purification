@@ -6,6 +6,9 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [v0.2.0] - 2019-0528
+- 2019-0528: Development begins, pkg export but as v0.1.5, removed ChannelPatterLib from lib/
+
 ## [v0.1.5] - 2019-0528
 - Fixed tip reloading as best as possible
 - Still don't know how to prepare for when Tip50 runs out exactly at each level
