@@ -5,7 +5,7 @@ An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 ## Version
 
 Last Stable Release - v0.1.3 (master)  
-Development - v0.1.4 (v0.1.4)  
+Development - v0.1.5 (v0.1.5)  
 
 ## Installation
 
@@ -20,6 +20,8 @@ cd ML-STAR-Axygen-Purification
 ## Usage
 
 TODO: Write usage instructions
+Merge v0.1.5 into master, hasn't been updated since v0.1.3 (2017)  
+
 
 ## Contributing
 
