@@ -44,7 +44,7 @@ TODO: Write license
 
 ## Helpful Commands
 **Merging a development branch into master:**  
-  (on branch development) git merge master  
+  (on branch development) `git merge master`  
   (resolve any mergen conflicts if there are any)  
-  git checkout master  
-  git merge --no-ff development (there won't be any conflicts now)  
+  `git checkout master`  
+  `git merge --no-ff development` (there won't be any conflicts now)  
