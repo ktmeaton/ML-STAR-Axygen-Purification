@@ -2,7 +2,7 @@
 
 An ML STAR method for the AxyPrep Mag PCR Clean-Up Protocol
 
-## Version
+## Version v0.1.5
 
 Last Stable Release - v0.1.5 (master)  
 Development - v0.2.0 (dev)  
