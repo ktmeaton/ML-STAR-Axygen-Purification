@@ -6,9 +6,10 @@ and this project "attempts" to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
-## [v0.1.5] - 2019-04-26
+## [v0.1.5] - 2019-0528
 - Fixed tip reloading as best as possible
 - Still don't know how to prepare for when Tip50 runs out exactly at each level
+- 2019-0528: 3X Stable Run Through Success
 
 ## [v0.1.4] - 2019-04-12
 
